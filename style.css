@@ -2,99 +2,97 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", system-ui;
 }
 
 body {
-  background-color: black;
+  font-family: "Poppins", system-ui;
+  background-color: #222831;
+}
+header {
+  position: relative;
 }
 
 .navbar {
-  height: 4.5vw;
   display: flex;
-  color: white;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.navbar-left ul {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.navbar-left ul li {
+  margin-right: 6vw;
+  list-style: none;
+}
+
+.logo a {
+  text-decoration: none;
+  margin-left: 4vw;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 1vw;
+  color: #eeeeee;
+}
+
+.navbar-left ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #eeeeee;
+}
+
 .sidebar {
-  /* position: absolute; */
+  position: absolute;
   z-index: 999;
-  backdrop-filter: blur(10px);
   top: 0;
-  right: 0;
   bottom: 0;
-  background-color: rgb(134, 36, 179);
-  flex-direction: column;
-  display: none;
+  right: 0;
+  backdrop-filter: blur(50px);
+  /* background-color: #eeeeee; */
   height: 100vh;
   width: 20vw;
-  align-items: center;
-  color: white;
-  list-style: none;
-}
-
-.sidebar li{
-  font-size: 10vw;
-
-}
-
-.sidebar li:first-child {
-  margin-top: 1vw;
-}
-
-.logo {
-  margin-left: 2em;
-  font-size: 2vw;
-  font-weight: 700;
-}
-
-.navbarleft {
-  padding-right: 7vw;
-}
-
-.navbarleft ul {
-  display: flex;
-  align-items: center;
-  gap: 5vw;
-}
-
-.navbarleft ul li {
-  list-style: none;
-  font-size: 1.5vw;
-  font-weight: 400;
-}
-
-.menu-icon {
   display: none;
 }
 
-hr {
-  background-color: white;
+.sidebar ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
 }
 
-@media (max-width: 800px) {
-  .sidebar {
-    width: 100%;
-    display: flex;
-    position: absolute;
-  }
+.sidebar ul li {
+  list-style: none;
+  padding: 1vw;
+}
 
-  .menu-icon {
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+  color: #eeeeee;
+}
+
+
+.menu-icon{
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .menu-icon{
     display: block;
   }
-
-  .hide-on-mobile {
+  .sidebar {
+    display: ;
+    width: 100%;
+  }
+  .hide-mobile {
     display: none;
-  }
-  .navbar {
-    height: 12vw;
-  }
-
-  .logo {
-    font-size: 6vw;
-  }
-  .navbarleft ul li {
-    font-size: 7vw;
   }
 }
