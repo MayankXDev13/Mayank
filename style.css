@@ -249,6 +249,16 @@ header {
 
   .project-card {
     height: 50vw;
-    width: 50vw;
+    width: auto;
+  }
+  .project-card h3{
+    /* color: #eeeeee; */
+    font-size: 3vw;
+    margin-top: 2vw;
+  }
+
+  .project-card p{
+    color: #eeeeee;
+    font-size: 3.5vw;
   }
 }
