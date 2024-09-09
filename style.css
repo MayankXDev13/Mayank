@@ -52,7 +52,17 @@ header {
   font-size: 1.5em;
   font-weight: 600;
   color: #EEEEEE;
+  transition: all 0.3s ease-in;
+  
 }
+
+.navbar ul li a:hover{
+  color: #222831;
+
+}
+
+
+
 
 .sidebar {
   position: absolute;
@@ -60,8 +70,8 @@ header {
   top: 0;
   bottom: 0;
   right: 0;
-  backdrop-filter: blur(50px);
-  /* background-color: #eeeeee; */
+  backdrop-filter: blur(100px);
+  background-color: #eeeeee;
   height: 100vh;
   width: 20vw;
   display: none;
@@ -84,7 +94,13 @@ header {
   text-decoration: none;
   font-size: 2em;
   font-weight: 700;
-  color: #eeeeee;
+  color: #222831;
+  transition: all 0.3s ease-in;
+}
+
+.sidebar ul li a:hover{
+  color: #00ADB5;
+
 }
 
 .menu-icon {
@@ -96,6 +112,7 @@ header {
   height: calc(100vh - 100px);
   width: 100%;
   background-color: #EEEEEE;
+  padding-top: 8vw;
   
 }
 
@@ -105,8 +122,9 @@ header {
   align-self: center;
   justify-content: flex-start;
   flex-direction: column;
-  margin-top: ;
+  /* padding-top: ; */
   margin-left: 4.5vw;
+  /* padding-top: 100px; */
 
 }
 
@@ -177,5 +195,8 @@ header {
     width: 45vw;
     height: 10vw;
     text-align: center;
+  }
+  .hero{
+    padding-top: 20vw;
   }
 }
