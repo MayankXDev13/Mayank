@@ -6,7 +6,8 @@
 
 body {
   font-family: "Poppins", system-ui;
-  background-color: #222831;
+  min-height: 100vh;
+  background-color: rgb(34, 40, 49);
 }
 header {
   position: relative;
@@ -17,6 +18,9 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  position: relative;
+  backdrop-filter: blur();
+  background-color: #00ADB5;
 }
 
 .navbar-left ul {
@@ -33,17 +37,21 @@ header {
 .logo a {
   text-decoration: none;
   margin-left: 4vw;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 600;
   padding: 1vw;
-  color: #eeeeee;
+  color: #EEEEEE;
 }
+
+
+
+
 
 .navbar-left ul li a {
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 600;
-  color: #eeeeee;
+  color: #EEEEEE;
 }
 
 .sidebar {
@@ -79,20 +87,95 @@ header {
   color: #eeeeee;
 }
 
-
-.menu-icon{
+.menu-icon {
   display: none;
 }
 
+/* Hero */
+.hero{
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-color: #EEEEEE;
+  
+}
+
+
+.left {
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: ;
+  margin-left: 4.5vw;
+
+}
+
+.hero h1 {
+  color: #222831;
+  font-size: 7vw;
+  font-weight: 700;
+}
+.hero h1 span {
+  color: #00adb5;
+}
+
+.sub-heding1 {
+  color: #222831;
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.sub-heding1 span {
+  color: #00adb5;
+  font-size: 3vw;
+  font-weight: 600;
+}
+.cta{
+  margin-top: 10px;
+  width: 15vw;
+  height: 3vw;
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  background-color: #00ADB5;
+  font-size: 1em;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.cta:hover{
+  background-color: #222831;
+  color: #00ADB5;
+}
+
+
 @media (max-width: 850px) {
-  .menu-icon{
+  .menu-icon {
     display: block;
   }
   .sidebar {
-    display: ;
     width: 100%;
   }
   .hide-mobile {
     display: none;
+  }
+
+  .hero h1 {
+    font-size: 11vw;
+  }
+  .sub-heding1 {
+    font-size: 3.5vw;
+  }
+
+  .sub-heding1 span {
+    font-size: 5vw;
+  }
+
+  .cta{
+    font-size: 4vw;
+    width: 45vw;
+    height: 10vw;
+    text-align: center;
   }
 }
